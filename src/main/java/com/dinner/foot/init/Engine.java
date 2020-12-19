@@ -84,7 +84,7 @@ public class Engine implements CommandLineRunner {
 //        foodRepository.saveAndFlush(food);
        // user.setFoods(List.of(food));
        // userRepository.saveAndFlush(user);
-        User user2 = userRepository.findById(2).orElseThrow();
-        System.out.printf("name: %s > food: %s > supply: %s",user2.getFirstName(),user2.getFoods().size(),user2.getFoods().get(0).getSupplements().size());
+//        User user2 = userRepository.findById(2).orElseThrow();
+//        System.out.printf("name: %s > food: %s > supply: %s",user2.getFirstName(),user2.getFoods().size(),user2.getFoods().get(0).getSupplements().size());
     }
 }

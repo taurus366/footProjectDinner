@@ -35,7 +35,7 @@ public class User extends BaseEntity{
 //    @ManyToMany
 //    @JoinTable(name = "users_foods",
 //    joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
-//            inverseJoinColumns = @JoinColumn(name = "food_id",referencedColumnName = "id"))
+//            inverseJoinColumns = @JoinColumn(name = "supplements_foods",referencedColumnName = "id"))
 //    private List<Food> foods;
 
 
