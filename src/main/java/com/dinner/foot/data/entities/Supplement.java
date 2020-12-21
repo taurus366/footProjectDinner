@@ -1,9 +1,6 @@
 package com.dinner.foot.data.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -14,6 +11,17 @@ public class Supplement extends BaseEntity{
 
     @ManyToMany()
     private List<Food> foods;
+
+    @ManyToMany(mappedBy = "supplement")
+    private List<Order> orders;
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
+    }
 
     public Supplement() {
     }
